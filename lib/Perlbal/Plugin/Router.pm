@@ -4,6 +4,8 @@ use strict;
 use warnings;
 no  warnings qw(deprecated);
 
+our $VERSION = '0.0.1';
+
 =head1 NAME
 
 Perlbal::Plugin::Router
