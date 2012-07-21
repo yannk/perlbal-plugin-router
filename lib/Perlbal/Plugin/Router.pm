@@ -78,7 +78,7 @@ sub unload {
 sub register {
     my ($class, $svc) = @_;
     unless ($svc && $svc->{role} eq "selector") {
-        die "You can't load the vpath plugin on a service not of role selector.\n";
+        die "You can't load the ROUTER plugin on a service not of role selector.\n";
     }
 
     $svc->selector(\&route_selector);
